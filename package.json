@@ -2,7 +2,7 @@
   "name": "proj-node-server",
   "version": "1.0.0",
   "scripts": {
-    "dev": " server.js",
+    "dev": "node server.js",
     "start": "node server.js"
   },
   "author": "Me",

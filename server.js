@@ -65,7 +65,6 @@ app.post('/api/toy', (req, res) => {
     const toy = {
         name: req.body.name,
         price: +req.body.price,
-        speed: +req.body.speed,
         labels: req.body.labels || [],
         inStock: req.body.inStock
     }
@@ -86,7 +85,6 @@ app.put('/api/toy', (req, res) => {
         _id: req.body._id,
         name: req.body.name,
         price: +req.body.price,
-        speed: +req.body.speed,
         labels: req.body.labels || [],
         inStock: req.body.inStock
     }
