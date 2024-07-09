@@ -1,0 +1,86 @@
+[
+    {
+        "_id": "t101",
+        "name": "Woody",
+        "price": 124,
+        "labels": ["Doll", "Battery Powered", "Baby"],
+        "inStock": true
+    },
+    {
+        "_id": "t102",
+        "name": "Buzz Lightyear",
+        "price": 113,
+        "labels": ["Action Figure", "Battery Powered", "Fantasy"],
+        "inStock": true
+    },
+    {
+        "_id": "t103",
+        "name": "Bo Peep",
+        "price": 160,
+        "labels": ["Doll", "Indoor", "Collectible"],
+        "inStock": true
+    },
+    {
+        "_id": "t104",
+        "name": "Mr. Potato Head",
+        "price": 87,
+        "labels": ["Eco-friendly", "Preschool", "Interactive"],
+        "inStock": true
+    },
+    {
+        "_id": "t105",
+        "name": "Slinky Dog",
+        "price": 95,
+        "labels": ["Preschool", "Interactive", "Preschool"],
+        "inStock": true
+    },
+    {
+        "_id": "t106",
+        "name": "Hamm",
+        "price": 60,
+        "labels": ["Eco-friendly", "Action Figure", "Indoor"],
+        "inStock": true
+    },
+    {
+        "_id": "t107",
+        "name": "Rex",
+        "price": 88,
+        "labels": ["Interactive", "Battery Powered", "Action Figure"],
+        "inStock": true
+    },
+    {
+        "_id": "t108",
+        "name": "Sarge",
+        "price": 103,
+        "labels": ["Fantasy", "Battery Powered", "Action Figure"],
+        "inStock": true
+    },
+    {
+        "_id": "t109",
+        "name": "Aliens",
+        "price": 150,
+        "labels": ["Travel-friendly", "Battery Powered", "Interactive"],
+        "inStock": true
+    },
+    {
+        "_id": "t110",
+        "name": "Rc",
+        "price": 118,
+        "labels": ["Outdoor", "Battery Powered", "Travel-friendly"],
+        "inStock": true
+    },
+    {
+        "_id": "t111",
+        "name": "Jessie",
+        "price": 136,
+        "labels": ["Doll", "Action Figure", "Collectible"],
+        "inStock": true
+    },
+    {
+        "_id": "t112",
+        "name": "Bullseye",
+        "price": 73,
+        "labels": ["Preschool", "Battery Powered", "Outdoor"],
+        "inStock": true
+    }
+]
