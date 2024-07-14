@@ -87,16 +87,16 @@ async function add(toy) {
   }
 }
 
-async function update(toy) {
+async function update(toyId, toy) {
   try {
     const toyToSave = {
-      vendor: toy.name,
+      name: toy.name,
       price: toy.price,
       labels: toy.labels,
       inStock: toy.inStock,
     }
     const collection = await dbService.getCollection(TOYS_COLLECTION)
-    await collection.updateOne({ _id: ObjectId.createFromHexString(toy._id) }, { $set: toyToSave })
+    await collection.updateOne({ _id: ObjectId.createFromHexString(toyId) }, { $set: toyToSave })
     return toy
   } catch (err) {
     logger.error(`cannot update toy ${toyId}`, err)

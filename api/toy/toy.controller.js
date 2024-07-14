@@ -49,8 +49,10 @@ export async function addToy(req, res) {
 
 export async function updateToy(req, res) {
     try {
+        const toyId = req.params.id
         const toy = req.body
-        const updatedToy = await toyService.update(toy)
+        logger.debug(toy)
+        const updatedToy = await toyService.update(toyId, toy)
         res.json(updatedToy)
     } catch (err) {
         logger.error('Failed to update toy', err)
