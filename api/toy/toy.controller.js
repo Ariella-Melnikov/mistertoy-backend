@@ -1,5 +1,6 @@
 import { toyService } from './toy.service.js'
 import { logger } from '../../services/logger.service.js'
+import { utilService } from '../../services/util.service.js'
 
 export async function getToys(req, res) {
   try {
@@ -66,5 +67,28 @@ export async function removeToy(req, res) {
   } catch (err) {
     logger.error('Failed to remove toy', err)
     res.status(500).send({ err: 'Failed to remove toy' })
+  }
+}
+
+export async function initDB(req, res) {
+  try {
+    const toys = utilService.readJsonFile('data/toy.json')
+    let toysToAdd = [...toys];
+    var toysAdded = 0;
+
+    await toysToAdd.map( toy => {
+        try {
+            delete toy._id
+            toyService.add(toy)
+            toysAdded+=1
+        } catch (err) {
+            logger.error('Failed to add toy', err)
+        }
+    })
+
+    res.send(`${toysAdded} toys added to db`)
+  } catch (err) {
+    logger.error('Failed to init DB', err)
+    res.status(500).send({ err: 'Failed to init DB' })
   }
 }
